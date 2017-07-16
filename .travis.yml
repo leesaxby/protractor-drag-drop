@@ -1,0 +1,5 @@
+language: node_js
+env:
+  - KARMA_RUN_TYPE=single
+node_js:
+  - "node"
