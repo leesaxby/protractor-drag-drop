@@ -8,7 +8,8 @@
     "build": "NODE_ENV=production webpack -p",
     "unit": "KARMA_RUN_TYPE=single karma start",
     "unit-watch": "karma start",
-    "test": "karma start"
+    "test": "karma start",
+    "e2e": "./run-ui-tests.sh"
   },
   "author": "Lee Saxby",
   "license": "ISC",
@@ -41,6 +42,7 @@
   },
   "dependencies": {
     "angular": "^1.6.3",
+    "angular-drag-and-drop-lists": "2.1.0",
     "angular-ui-router": "^1.0.0-rc.1"
   }
 }

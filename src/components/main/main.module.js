@@ -1,14 +1,15 @@
 import angular from 'angular';
 import router from 'angular-ui-router';
-import welcome from './welcome/welcome.component.js';
+import dnd from './dnd/dnd.component.js';
 
-export default angular.module('main', [router])
-        .component('welcome', welcome)
+require('angular-drag-and-drop-lists');
+
+export default angular.module('main', [router, 'dndLists'])
+        .component('dnd', dnd)
         .config(function ($stateProvider) {
             $stateProvider
                 .state('main', {
                     url: '/main',
-                    component: 'welcome'
+                    component: 'dnd'
                 })
         }).name;
-        

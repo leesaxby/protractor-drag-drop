@@ -1,0 +1,11 @@
+<div class="list-container">
+    <ul dnd-list="$ctrl.list">
+        <li ng-repeat="item in $ctrl.list"
+             dnd-draggable="item"
+             dnd-moved="$ctrl.list.splice($index, 1)">
+
+            <span title="{{lender.label}}">{{item.label}}</span>
+
+        </li>
+    </ul>
+</div>
